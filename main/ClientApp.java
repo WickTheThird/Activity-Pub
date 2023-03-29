@@ -43,20 +43,31 @@ interface App {
 
 public class ClientApp implements App {
 
+    User user;
+    ActivityStream userActivity;
+    InputStream userInstr;
+    OutputStream userOutstr;
+
     // init and testing
     public static void main(String... args) {
         ClientApp app = new ClientApp();
+        app.clientApp("test");
         app.demo();
     }
 
     public void clientApp(String name) {
-        ClientApp userInstr = new InputStream();
-        ClientApp userOutstr = new OutputStream();
-        ClientApp userActivity = new ActivityStream();
+        this.user = new User();
+        this.userActivity = new ActivityStream();
+        this.userInstr = new InputStream();
+        this.userOutstr = new OutputStream();
     }
 
     // constructors
     public String demo() {
+
+        ClientApp app1 = new ClientApp();
+        ClientApp app2 = new ClientApp();
+
         return "hello";
     }
 

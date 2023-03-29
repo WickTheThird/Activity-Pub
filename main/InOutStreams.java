@@ -1,6 +1,6 @@
 package activitypub;
 
-class InputStream extends ClientApp implements Inbox {
+class InputStream implements Inbox {
 
     // init and testing
     public static void main(String... args) {}
@@ -25,7 +25,7 @@ class InputStream extends ClientApp implements Inbox {
 
 }
 
-class OutputStream extends ClientApp implements Outbox {
+class OutputStream implements Outbox {
 
     // init and testing
     public static void main(String... args) {}
