@@ -1,0 +1,34 @@
+Person created
+URI: https://example.com/users/1
+Name: user1
+Person created
+URI: https://example.com/users/2
+Name: user2
+Person created
+URI: https://example.com/users/3
+Name: user3
+New Stream Object created with the following:URI: https://example.com/articles/1 Name: article1 Type: article
+
+The article article1 was written by user1 and it says:
+THIS IS A LONG ARTICLE
+New Stream Object created with the following:URI: image Name: sending image Type: https://example.com/images/1
+
+URL:The URL https://example.com/images/1 is of type Image and it has a media type of png
+Activity Created
+
+URI: http://example.com/follow/user2
+Summary: Follow user2
+Actor: user1
+Target: user2
+Activity Created
+
+URI: http://example.com/follow/user3
+Summary: Follow user3
+Actor: user2
+Target: user3
+Create activity sent
+Create activity sent
+http://example.com/created/article/1 left https://example.com/users/1's outbox:
+http://example.com/created/image/1 left https://example.com/users/1's outbox:
+https://example.com/users/2 read: http://example.com/created/article/1
+https://example.com/users/3 read: http://example.com/created/image/1

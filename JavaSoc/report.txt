@@ -1,0 +1,39 @@
+Creating Activity Pub Project.
+
+I generally enjoyed this prohect as I learned a lot from it.
+I was lucky that I have had a clean filestructure from the start
+ i can say that w3 has helped me quite a lot regarding this and
+ understanding what the classes should do, what attributes should have
+ other child classes and so on, it was quite easy to deduce, the docs was quite
+ friendly.
+ I have also set up a makefile in order to help me. Quite basic:
+    
+run:
+	java -cp ../class activitypub.ClientApp
+
+java:
+	javac -d ../class ../main/*.java
+
+clean:
+	rm -rf ../class/activitypub/*.class
+	rm -rf ../class/activitypub
+
+(i will not include it in the zip file)
+
+I think i have faught with the syntax quite a bit, but this is just me being used to
+other languages, luckly I have had some experience with C#. I have also had an issue with
+abstract classes, now i know how to handle errors regarding it and what I missed. I can say
+that the longest error that I had was, irrocally, System.Out.println("URL", this.url). The comma
+shouldn't be there...JS has it, python has it...Another annoyance was that Java does not support
+deafult parameters, luckly getters and setters are here.
+
+The project was pretty simple, but it was good class exercise.
+
+If I were to do it again I would probably try and organize my classes better, methods should all have
+a println since its easier to debug (i suffered through terminal errors).
+
+I tried to comment as much as possible, it has saved me a lot of times and helped me proprely
+keep track with what i had to do the next time I sat to do the project.
+
+So yeah, probably could have given more examples in the demo, implement more stream object types
+like mention, but I am happy that I understood the concept of activitypub.
